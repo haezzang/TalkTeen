@@ -3,6 +3,7 @@ package com.cookandroid.teen901;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
                 if (email_id.getText().toString().equals("미림여자정보과학고등학교")) {
                     // 미림여자정보과학고등학교를 입력하였을때 Toast로 "환영합니다"를 출력
                     Toast.makeText(getApplicationContext(), "환영합니다", Toast.LENGTH_LONG).show();
+                    // submit 클릭시 액티비티 전환
+                    Intent intent = new Intent(getApplicationContext(), schoolmain.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(getApplicationContext(), "학교명을 제대로 기입해주시기 바랍니다.", Toast.LENGTH_LONG).show();
                 }
