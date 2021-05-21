@@ -6,8 +6,8 @@
 
 
 ## 화면
-#### :green_heart: 라즈베리파이, NUGU Algorithm :green_heart:
-![메인화면](app/src/main/res/drawable-v24/TalkTeen01.png)
+#### :computer: 라즈베리파이, NUGU Algorithm :computer:
+<img src="app/src/main/res/drawable-v24/TalkTeen01.PNG" width="500" height="650">
 
 ## MEMBER 
 * **[오윤서](https://github.com/yo-nseo)** : Full Stack Development
