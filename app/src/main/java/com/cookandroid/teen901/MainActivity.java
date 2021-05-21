@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("TalkTeen");
         // find ViewById
         email_id = (EditText) findViewById(R.id.email_id);
         email_btn_id = (Button) findViewById(R.id.email_btn_id);
