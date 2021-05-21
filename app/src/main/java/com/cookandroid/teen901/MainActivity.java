@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                     // 미림여자정보과학고등학교를 입력하였을때 Toast로 "환영합니다"를 출력
                     Toast.makeText(getApplicationContext(), "환영합니다", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(getApplicationContext(), "환영안함", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "학교명을 제대로 기입해주시기 바랍니다.", Toast.LENGTH_LONG).show();
                 }
             }
         });
