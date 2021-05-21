@@ -7,7 +7,7 @@
 
 ## 화면
 #### :green_heart: 라즈베리파이, NUGU Algorithm :green_heart:
-![메인화면](app/src/main/res/drawable-v24/TalkTeen 알고리즘.png)
+![메인화면](app/src/main/res/drawable-v24/TalkTeen01.png)
 
 ## MEMBER 
 * **[오윤서](https://github.com/yo-nseo)** : Full Stack Development
