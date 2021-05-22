@@ -16,17 +16,31 @@
             android:background="#ffffff"
             android:paddingTop="60dp"
             android:paddingLeft="18dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginTop="15dp"
             android:width="500dp"
             android:height="120dp"
-            android:layout_marginTop="15dp"
             android:background="#BCE0FD"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical"
             android:text="미림여자정보과학고등학교"
             android:textColor="#2699FB"
-            android:textSize="18dp"
-            android:gravity="center_vertical|center"/>
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:width="380dp"
+            android:height="70dp"
+            android:layout_gravity="center"
+            android:background="#BCE0FD"
+            android:gravity="center_vertical|center"
+            android:orientation="vertical"
+            android:text="양파링"
+            android:textColor="#2699FB"
+            android:textSize="18dp" />
     </LinearLayout>
 </LinearLayout>
