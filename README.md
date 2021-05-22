@@ -11,5 +11,6 @@
 
 ## MEMBER 
 * **[오윤서](https://github.com/yo-nseo)** : Full Stack Development
+* **[조해정](https://github.com/haezzang)** : Full Stack Development
 * **[조혜라](https://github.com/areyh817)** : Plan, Full Stack Development
 * **조하빈** : UI/UX, Voice Ux Desinger
