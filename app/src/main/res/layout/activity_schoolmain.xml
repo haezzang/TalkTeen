@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="5"
     android:background="#ffffff">
 
     <ImageButton
@@ -11,58 +12,90 @@
         android:background="#ffffff"
         android:paddingTop="10dp"
         android:paddingLeft="5dp"
-        android:src="@drawable/arrow3" />z
-        <!--매점상품목록-->
+        android:src="@drawable/arrow3" />
 
     <LinearLayout
-        android:textColor="#2699FB"
         android:background="#F1F9FF"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal">
-
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
 
         <LinearLayout
 
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical|center"
+                android:text="지도임티"
+                android:textColor="#2699FB"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
             android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="300dp"
-                android:layout_height="80dp"
-                android:layout_weight="1" />
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                ></LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp" android:layout_weight="1"
-            android:orientation="horizontal">
+              >
 
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="80dp">
                 <TextView
-                    android:layout_width="50dp"
+                    android:layout_width="236dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="미림여자정보과학고등학교"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               >
+
+                <TextView
+                    android:layout_width="237dp"
                     android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="40dp"
-                    android:background="#F1F9FF"
-                    android:gravity="center_vertical|center"
-                    android:orientation="vertical"
-                    android:text="매점 OPEN"
-                    android:textSize="17dp" />
+                    android:text="SEOUL"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp" />
             </LinearLayout>
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="253dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="37dp"
+                android:layout_height="74dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="66dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical|center"
+                    android:text="매점 OPEN"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -147,4 +180,6 @@
         android:textColor="#2699FB"
         android:textSize="18dp"/>
 </LinearLayout>
+        <!--매점상품목록-->
+
 
