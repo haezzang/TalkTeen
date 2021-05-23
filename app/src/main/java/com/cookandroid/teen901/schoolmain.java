@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class schoolmain extends AppCompatActivity {
     ImageButton back_btn;
+    Button btn_snack;
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +19,21 @@ public class schoolmain extends AppCompatActivity {
 
         // findViewById
         back_btn = (ImageButton)findViewById(R.id.back_btn);
+        btn_snack = (Button)findViewById(R.id.btn_snack);
 
         back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // back 화사표 클릭시 로그인 액티비티 전환
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        btn_snack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 스낵류 클릭시 스낵류 화면 전환 전환
+                Intent intent = new Intent(getApplicationContext(), snack.class);
                 startActivity(intent);
             }
         });

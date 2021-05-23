@@ -5,7 +5,7 @@
     android:background="#ffffff">
 
     <ImageButton
-        android:id="@+id/backarrow_btn"
+        android:id="@+id/back_btn"
         android:layout_width="60dp"
         android:layout_height="58dp"
         android:background="#ffffff"

@@ -7,7 +7,7 @@
 
     <!--뒤로가기 버튼-->
     <ImageButton
-        android:id="@+id/back_btn"
+        android:id="@+id/snack_back_btn"
         android:layout_width="60dp"
         android:layout_height="58dp"
         android:background="#ffffff"
@@ -64,6 +64,7 @@
 
 <!-- 매점상품목록-->
     <Button
+        android:id="@+id/btn_snack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
