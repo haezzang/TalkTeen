@@ -17,7 +17,7 @@
     <LinearLayout
         android:background="#F1F9FF"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         android:layout_weight="1">
 
@@ -27,16 +27,17 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-<!--            지도 아이콘 넣기-->
+            <!--            지도 아이콘 넣기-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
                 android:layout_marginLeft="5dp"
                 android:gravity="center_vertical|center"
-                android:text="지도임티"
+                android:text="스낵임티"
                 android:textColor="#2699FB"
                 android:textSize="18dp"
                 android:textStyle="bold" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -48,29 +49,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-              >
+                >
 
                 <TextView
                     android:layout_width="236dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="미림여자정보과학고등학교"
+                    android:layout_marginTop="30dp"
+                    android:text="스낵류"
                     android:textColor="#2699FB"
-                    android:textSize="18dp"
+                    android:textSize="25dp"
                     android:textStyle="bold" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-               >
-
-                <TextView
-                    android:layout_width="237dp"
-                    android:layout_height="match_parent"
-                    android:text="SEOUL"
-                    android:textColor="#2699FB"
-                    android:textSize="18dp" />
             </LinearLayout>
         </LinearLayout>
 
@@ -80,23 +68,23 @@
             android:layout_weight="3"
             android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="37dp"
-                android:layout_height="74dp"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="66dp"
-                    android:layout_height="100dp"
-                    android:gravity="center_vertical|center"
-                    android:text="매점 OPEN"
-                    android:textColor="#2699FB"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-<!-- 매점상품목록-->
+    <!-- 스크롤뷰 넣어야함,리니어중첩하기,흰배경 밑테두리 파란색,과자 추가하기-->
+    <LinearLayout
+        android:layout_weight="1"
+        android:background="#00000"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="100dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="새우깡 1500원 500kcal"/>
+
+    </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,7 +95,7 @@
         android:background="#F1F9FF"
         android:gravity="center_vertical|center"
         android:orientation="vertical"
-        android:text="스낵류"
+        android:text="과자/사탕/젤리/초콜릿"
         android:textColor="#2699FB"
         android:textSize="18dp" />
 
@@ -167,20 +155,7 @@
         android:textColor="#2699FB"
         android:textSize="18dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="70dp"
-        android:layout_gravity="center"
-        android:background="#F1F9FF"
-        android:gravity="center_vertical|center"
-        android:orientation="vertical"
-        android:text="학용품/기타"
-        android:textColor="#2699FB"
-        android:textSize="18dp"/>
 </LinearLayout>
-        <!--매점상품목록-->
+    <!--매점상품목록-->
 
 
