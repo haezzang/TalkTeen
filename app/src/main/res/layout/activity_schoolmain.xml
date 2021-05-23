@@ -129,7 +129,7 @@
         android:background="#F1F9FF"
         android:gravity="center_vertical|center"
         android:orientation="vertical"
-        android:text="식사"
+        android:text="식사류"
         android:textColor="#2699FB"
         android:textSize="18dp" />
 

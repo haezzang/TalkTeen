@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="5"
     android:background="#ffffff">
 
     <ImageButton
@@ -18,22 +17,19 @@
         android:background="#F1F9FF"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:layout_weight="1">
+        android:orientation="horizontal">
 
         <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent">
 
-            android:layout_width="126dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <!--지도 아이콘 넣기-->
+            <!--스낵 아이콘 넣기-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:gravity="center_vertical|center"
-                android:text="스낵임티"
+                android:text="스낵"
                 android:textColor="#2699FB"
                 android:textSize="18dp"
                 android:textStyle="bold" />
@@ -43,117 +39,506 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="3"
             android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                >
 
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
                 <TextView
-                    android:layout_width="236dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     android:text="스낵류"
                     android:textColor="#2699FB"
                     android:textSize="25dp"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="253dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:orientation="horizontal">
-
-        </LinearLayout>
     </LinearLayout>
-    <!-- 스크롤뷰 넣어야함,리니어중첩하기,흰배경 밑테두리 파란색,과자 추가하기-->
+
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
         android:layout_weight="1"
         android:background="#ffffff"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
         android:gravity="center"
-        android:layout_height="100dp">
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="새우깡 1500원 500kcal"/>
-
+        android:orientation="vertical">
     </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="70dp"
-        android:layout_gravity="center"
-        android:background="#F1F9FF"
-        android:gravity="center_vertical|center"
-        android:orientation="vertical"
-        android:text="과자/사탕/젤리/초콜릿"
-        android:textColor="#2699FB"
-        android:textSize="18dp" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="70dp"
-        android:layout_gravity="center"
-        android:background="#F1F9FF"
-        android:gravity="center_vertical|center"
-        android:orientation="vertical"
-        android:text="빵"
-        android:textColor="#2699FB"
-        android:textSize="18dp" />
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="70dp"
-        android:layout_gravity="center"
-        android:background="#F1F9FF"
-        android:gravity="center_vertical|center"
-        android:orientation="vertical"
-        android:text="아이스크림"
-        android:textColor="#2699FB"
-        android:textSize="18dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="70dp"
-        android:layout_gravity="center"
-        android:background="#F1F9FF"
-        android:gravity="center_vertical|center"
-        android:orientation="vertical"
-        android:text="음료"
-        android:textColor="#2699FB"
-        android:textSize="18dp" />
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:width="380dp"
-        android:height="70dp"
-        android:layout_gravity="center"
-        android:background="#F1F9FF"
-        android:gravity="center_vertical|center"
-        android:orientation="vertical"
-        android:text="식사"
-        android:textColor="#2699FB"
-        android:textSize="18dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:gravity="center_vertical|right"
+                android:text="새우깡"
+                android:textColor="#2699FB"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|left"
+                    android:text="150kcal"
+                    android:textColor="#2699FB"
+                    android:textSize="15dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|center"
+                    android:text="1500원"
+                    android:textColor="#2699FB"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
+
 
 </LinearLayout>
 
