@@ -27,7 +27,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-            <!--            지도 아이콘 넣기-->
+            <!--지도 아이콘 넣기-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
@@ -73,7 +73,7 @@
     <!-- 스크롤뷰 넣어야함,리니어중첩하기,흰배경 밑테두리 파란색,과자 추가하기-->
     <LinearLayout
         android:layout_weight="1"
-        android:background="#00000"
+        android:background="#ffffff"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:gravity="center"
@@ -156,6 +156,5 @@
         android:textSize="18dp" />
 
 </LinearLayout>
-    <!--매점상품목록-->
 
 

@@ -5,8 +5,9 @@
     android:weightSum="5"
     android:background="#ffffff">
 
+    <!--뒤로가기 버튼-->
     <ImageButton
-        android:id="@+id/backarrow_btn"
+        android:id="@+id/back_btn"
         android:layout_width="60dp"
         android:layout_height="58dp"
         android:background="#ffffff"
@@ -14,88 +15,53 @@
         android:paddingLeft="5dp"
         android:src="@drawable/arrow3" />
 
+    <!-- 학교명, 매점오픈 유/무 확인, 지도이모티콘, 지역-->
     <LinearLayout
         android:background="#F1F9FF"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
         android:layout_weight="1">
-
         <LinearLayout
-
             android:layout_width="126dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
 
-<!--            지도 아이콘 넣기-->
+            <!-- 지도 아이콘 넣기-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginLeft="7dp"
                 android:gravity="center_vertical|center"
                 android:text="지도임티"
                 android:textColor="#2699FB"
                 android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="236dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center"
+                android:gravity="center_vertical|center"
+                android:text="미림여자정보과학고등학교"
+                android:textColor="#2699FB"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center_vertical|center"
+                android:layout_gravity="center_vertical|center"
+                android:text="매점\nOPEN"
+                android:textColor="#2699FB"
+                android:textSize="18dp"
                 android:textStyle="bold" />
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-              >
-
-                <TextView
-                    android:layout_width="236dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:text="미림여자정보과학고등학교"
-                    android:textColor="#2699FB"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-               >
-
-                <TextView
-                    android:layout_width="237dp"
-                    android:layout_height="match_parent"
-                    android:text="SEOUL"
-                    android:textColor="#2699FB"
-                    android:textSize="18dp" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="253dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="37dp"
-                android:layout_height="74dp"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="66dp"
-                    android:layout_height="100dp"
-                    android:gravity="center_vertical|center"
-                    android:text="매점 OPEN"
-                    android:textColor="#2699FB"
-                    android:textSize="18dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </LinearLayout>
     </LinearLayout>
+
 <!-- 매점상품목록-->
     <Button
         android:layout_width="wrap_content"
