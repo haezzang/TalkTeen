@@ -15,7 +15,7 @@ public class snack extends AppCompatActivity {
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_snack);
-        setTitle("Talkteen");
+        setTitle("스낵류");
 
         // findViewById
         back_btn = (ImageButton) findViewById(R.id.back_btn);
