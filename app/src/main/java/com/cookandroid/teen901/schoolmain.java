@@ -2,6 +2,7 @@ package com.cookandroid.teen901;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -9,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class schoolmain extends AppCompatActivity {
-    ImageButton back_btn;
+    ImageButton snack_back_btn;
     Button btn_snack;
 
     @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,10 +19,10 @@ public class schoolmain extends AppCompatActivity {
         setTitle("TalkTeen");
 
         // findViewById
-        back_btn = (ImageButton)findViewById(R.id.back_btn);
+        snack_back_btn = (ImageButton)findViewById(R.id.snack_back_btn);
         btn_snack = (Button)findViewById(R.id.btn_snack);
 
-        back_btn.setOnClickListener(new View.OnClickListener() {
+        snack_back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // back 화사표 클릭시 로그인 액티비티 전환
@@ -32,7 +33,7 @@ public class schoolmain extends AppCompatActivity {
         btn_snack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // 스낵류 클릭시 스낵류 화면 전환 전환
+                // 새우깡 클릭 시 snack 액티비티 전환
                 Intent intent = new Intent(getApplicationContext(), snack.class);
                 startActivity(intent);
             }

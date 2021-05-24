@@ -25,10 +25,10 @@ public class MainActivity extends AppCompatActivity {
         email_btn_id = (Button) findViewById(R.id.email_btn_id);
 
 
-        email_btn_id.setOnClickListener(new View.OnClickListener() {
+       /* email_btn_id.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (email_id.getText().toString().equals("미림여자정보과학고등학교")) {
+                if(email_id.getText().toString().equals("미림여자정보과학고등학교")){
                     // 미림여자정보과학고등학교를 입력하였을때 Toast로 "환영합니다"를 출력
                     Toast.makeText(getApplicationContext(), "환영합니다", Toast.LENGTH_LONG).show();
                     // submit 클릭시 액티비티 전환
@@ -38,6 +38,15 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "학교명을 제대로 기입해주시기 바랍니다.", Toast.LENGTH_LONG).show();
                 }
             }
-        });
+        });*/
+
+       email_btn_id.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               // submit 클릭시 액티비티 전환
+               Intent intent = new Intent(getApplicationContext(), schoolmain.class);
+               startActivity(intent);
+           }
+       });
     }
 }
